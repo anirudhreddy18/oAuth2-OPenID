@@ -1,0 +1,20 @@
+OAuth2 -> Requesting token from an auth server & then using that token to hit web API's. (Delegated authorization)
+OpenId -> type password in auth server & return token to client app & then client app validates token. (Authentication)
+
+Security token are data structures
+  - info about issuer & subject
+  - signed
+  - expiration time
+ client requests a token (Application)
+ issuer issues a token
+ resource consumes a token(has trust rel with issuer) (API)
+ 
+ SAML 2.0 most popular
+   - XML based
+   - many encryption & signature options
+   - very expressive
+ JWT
+  JSON encoded
+  symmetric & aymetric signatures
+  symmetric & aymetric encryption
+  new standard
