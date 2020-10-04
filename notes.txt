@@ -1,5 +1,6 @@
 OAuth2 -> Requesting token from an auth server & then using that token to hit web API's. (Delegated authorization)
 OpenId -> type password in auth server & return token to client app & then client app validates token. (Authentication)
+          followed by oauth token to hit API.
 
 Security token are data structures
   - info about issuer & subject
@@ -18,3 +19,13 @@ Security token are data structures
   symmetric & aymetric signatures
   symmetric & aymetric encryption
   new standard
+  header(metadata & algorithms) cliams(issuer, audience, issued at, expiration, subject & app defined claims)
+  Mandatory for OpenID Connect.
+
+OAuth2
+  open protocol to allow secure authorization and standard method for web, mobile, desktop apps.
+  client(trusted/untrusted) -> like everything built by 1 company(mobile, desktop etc.)
+  authorization server
+  Resource owner owns a resource on resource server
+  Resource server trusts auth server
+  
